@@ -1,0 +1,558 @@
+<!-- =========================
+     Studio Fortune - Página Principal
+     ========================= -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ====== METADADOS ====== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agendamento online, blog, galeria, fidelidade e informações sobre os serviços do Studio Fortune. Transforme sua beleza com profissionais qualificados no Rio de Janeiro.">
+    <meta name="keywords" content="salão de beleza, agendamento online, corte de cabelo, coloração, manicure, pedicure, maquiagem, hidratação, Fortune, Rio de Janeiro, Cachamorra, blog, fidelidade, avaliação, galeria">
+    <meta name="author" content="Equipe Studio Fortune">
+    <meta property="og:title" content="Studio Fortune - Beleza e Agendamento Online">
+    <meta property="og:description" content="Agende online, veja nossos trabalhos, participe do clube de fidelidade e confira nosso blog de beleza!">
+    <meta property="og:image" content="logoclara.jpg">
+    <meta property="og:type" content="website">
+    <title>Agendamento Online | Studio Fortune</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="logoclara.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+    <!-- ====== LOADER E ACESSIBILIDADE ====== -->
+    <div id="loader" class="loader-overlay" aria-label="Carregando página" role="status"><div class="loader"></div></div>
+    <div class="accessibility-bar">
+        <button id="increaseFont" aria-label="Aumentar fonte"><i class="fas fa-search-plus"></i></button>
+        <button id="decreaseFont" aria-label="Diminuir fonte"><i class="fas fa-search-minus"></i></button>
+        <button id="toggleContrast" aria-label="Ativar/desativar alto contraste"><i class="fas fa-adjust"></i></button>
+        <span class="sr-only">Atalhos: Alt+1 Agendamento, Alt+2 Trabalhos, Alt+3 Sobre, Alt+4 Conta</span>
+    </div>
+    <!-- ====== MENU MOBILE ====== -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-controls="sidebar-nav">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav class="sidebar-nav" id="sidebar-nav" aria-label="Menu lateral do site">
+        <button class="sidebar-close" id="sidebar-close" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="#appointment-section" class="nav-link active"><i class="fas fa-calendar-check"></i>Agendamento</a></li>
+            <li><a href="#works-section" class="nav-link"><i class="fas fa-images"></i>Nossos Trabalhos</a></li>
+            <li><a href="#beforeafter-section" class="nav-link"><i class="fas fa-exchange-alt"></i>Antes & Depois</a></li>
+            <li><a href="#testimonials-section" class="nav-link"><i class="fas fa-comment-dots"></i>Depoimentos</a></li>
+            <li><a href="#team-section" class="nav-link"><i class="fas fa-users"></i>Equipe</a></li>
+            <li><a href="#faq-section" class="nav-link"><i class="fas fa-question-circle"></i>FAQ</a></li>
+            <li><a href="#fidelidade-section" class="nav-link"><i class="fas fa-gift"></i>Fidelidade</a></li>
+            <li><a href="#blog-section" class="nav-link"><i class="fas fa-blog"></i>Blog</a></li>
+            <li><a href="#newsletter-section" class="nav-link"><i class="fas fa-envelope-open-text"></i>Newsletter</a></li>
+            <li><a href="#about-us-section" class="nav-link"><i class="fas fa-info-circle"></i>Sobre Nós</a></li>
+            <li><a href="#account-section" class="nav-link"><i class="fas fa-user-circle"></i>Minha Conta</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar-overlay" id="sidebar-overlay" tabindex="-1"></div>
+    <!-- ====== HEADER E NAVBAR DESKTOP ====== -->
+  <!-- ...existing code... -->
+<header class="main-header fade-in" role="banner">
+    <div class="header-bg-decor"></div>
+    <div class="logo-area">
+        <div class="logo-circle">
+            <img src="C:\Users\mathe\Downloads\logoclara.jpg" alt="Logo Studio Fortune" />
+        </div>
+    </div>
+    <h1 class="header-main-title-gradient">
+        Studio Fortune
+    </h1>
+    <p class="header-desc-strong">
+        Sua Beleza, Nossa Inspiração
+    </p>
+   
+</header>
+<!-- ...existing code... -->
+    <nav class="main-navbar fade-in" aria-label="Navegação Principal">
+        <ul>
+            <li><a href="#appointment-section" class="nav-link active"><i class="fas fa-calendar-check"></i><span>Agendamento</span></a></li>
+            <li><a href="#works-section" class="nav-link"><i class="fas fa-images"></i><span>Nossos Trabalhos</span></a></li>
+            <li><a href="#beforeafter-section" class="nav-link"><i class="fas fa-exchange-alt"></i><span>Antes & Depois</span></a></li>
+            <li><a href="#testimonials-section" class="nav-link"><i class="fas fa-comment-dots"></i><span>Depoimentos</span></a></li>
+            <li><a href="#team-section" class="nav-link"><i class="fas fa-users"></i><span>Equipe</span></a></li>
+            <li><a href="#faq-section" class="nav-link"><i class="fas fa-question-circle"></i><span>FAQ</span></a></li>
+            <li><a href="#blog-section" class="nav-link"><i class="fas fa-blog"></i><span>Blog</span></a></li>
+            <li><a href="#about-us-section" class="nav-link"><i class="fas fa-info-circle"></i><span>Sobre Nós</span></a></li>
+            <li><a href="#account-section" class="nav-link"><i class="fas fa-user-circle"></i><span>Conta</span></a></li>
+        </ul>
+    </nav>
+    <!-- ====== CATÁLOGO DE CORTES E TRANÇAS ====== -->
+<section id="catalogo-section" class="content-section catalogo-section fade-in-up" aria-labelledby="catalogo-heading" tabindex="-1">
+    <h2 id="catalogo-heading"><i class="fas fa-star icon-form"></i> Escolha seu Estilo</h2>
+    <div class="catalogo-gallery">
+        <!-- Exemplo de card, repita para outros estilos -->
+        <div class="catalogo-card" data-servico="tranca-basica" tabindex="0">
+            <div class="catalogo-img-wrap">
+                <img src="tranca-basica1.jpg" alt="Trança Básica" />
+            </div>
+            <div class="catalogo-info">
+                <h3>Trança Básica</h3>
+                <div class="catalogo-preco"><i class="fas fa-tag"></i> R$ 60,00</div>
+                <p class="catalogo-historia">Clássica, elegante e versátil. Ideal para qualquer ocasião, realçando sua beleza natural.</p>
+                <div class="catalogo-exemplos">
+                    <img src="tranca-basica2.jpg" alt="Exemplo 1" />
+                    <img src="tranca-basica3.jpg" alt="Exemplo 2" />
+                </div>
+                <button class="btn btn-primary ripple catalogo-agendar-btn"><i class="fas fa-calendar-plus"></i> Agendar este</button>
+            </div>
+        </div>
+        <div class="catalogo-card" data-servico="tranca-decorada" tabindex="0">
+            <div class="catalogo-img-wrap">
+                <img src="tranca-decorada1.jpg" alt="Trança Decorada" />
+            </div>
+            <div class="catalogo-info">
+                <h3>Trança Decorada</h3>
+                <div class="catalogo-preco"><i class="fas fa-tag"></i> R$ 90,00</div>
+                <p class="catalogo-historia">Com acessórios e desenhos criativos, perfeita para festas e eventos especiais.</p>
+                <div class="catalogo-exemplos">
+                    <img src="tranca-decorada2.jpg" alt="Exemplo 1" />
+                    <img src="tranca-decorada3.jpg" alt="Exemplo 2" />
+                </div>
+                <button class="btn btn-primary ripple catalogo-agendar-btn"><i class="fas fa-calendar-plus"></i> Agendar este</button>
+            </div>
+        </div>
+        <!-- Adicione mais cards conforme desejar -->
+    </div>
+</section>
+    <!-- ====== APRESENTAÇÃO ====== -->
+    <section id="appointment-section" class="content-section appointment-form fade-in-up" aria-labelledby="appointment-heading" tabindex="-1">
+        <div class="presentation-card modern-light">
+            <!-- ...existing code... -->
+      <div class="presentation-visual">
+    <div class="hero-carousel">
+        <img src="C:\Users\mathe\Downloads\boca.jpg" alt="Trança1" class="hero-img active" loading="lazy" />
+        <img src="C:\Users\mathe\Downloads\trançaL.jpg" alt="Trança2" class="hero-img" loading="lazy" />
+        <img src="C:\Users\mathe\Downloads\trançaD.jpg" alt="Maquiagem1" class="hero-img" loading="lazy" />
+        <!-- Adicione mais imagens se desejar -->
+    </div>
+</div>
+<!-- ...existing code... -->
+            <div class="presentation-info">
+                <h3>
+                    Studio Fortune: <span class="brand-highlight">Sua Beleza, Nossa Inspiração</span>
+                </h3>
+                <p>
+                    Viva uma experiência única em <b>tranças, maquiagem e autoestima</b> no Rio de Janeiro.<br>
+                    Profissionais apaixonados, ambiente acolhedor e resultados que surpreendem.<br>
+                    <span class="presentation-quote">"Agende seu momento de transformação!"</span>
+                </p>
+                <div class="presentation-actions">
+                    <a href="#appointmentForm" class="btn btn-primary ripple agendar-btn">
+                        <i class="fas fa-calendar-plus"></i> Agendar agora
+                    </a>
+                    <a href="#about-us-section" class="about-link">
+                        <i class="fas fa-info-circle"></i> Conheça o Studio
+                    </a>
+                </div>
+            </div>
+        </div>
+<!-- ...existing code... -->
+<section id="trancas-section" class="content-section trancas-section fade-in-up" aria-labelledby="trancas-heading" tabindex="-1">
+    <h2 id="trancas-heading"><i class="fas fa-braille icon-form"></i> Tipos de Tranças</h2>
+    <div class="trancas-gallery">
+        <div class="tranca-card" data-tranca="basica" tabindex="0">
+            <div class="tranca-img-wrap">
+                <img src="tranca-basica.jpg" alt="Trança Básica" />
+                <span class="tranca-card-label"><i class="fas fa-gem"></i> Básica</span>
+            </div>
+        </div>
+        <div class="tranca-card" data-tranca="decorada" tabindex="0">
+            <div class="tranca-img-wrap">
+                <img src="tranca-decorada.jpg" alt="Trança Decorada" />
+                <span class="tranca-card-label"><i class="fas fa-star"></i> Decorada</span>
+            </div>
+        </div>
+        <div class="tranca-card" data-tranca="freestyle" tabindex="0">
+            <div class="tranca-img-wrap">
+                <img src="tranca-freestyle.jpg" alt="Trança Freestyle" />
+                <span class="tranca-card-label"><i class="fas fa-fire"></i> Freestyle</span>
+            </div>
+        </div>
+        <!-- Adicione mais tipos se quiser -->
+    </div>
+</section>
+<!-- ...existing code... -->
+
+<!-- Modal aprimorado -->
+<div id="tranca-modal" class="tranca-modal" style="display:none;" aria-modal="true" role="dialog">
+    <div class="tranca-modal-content">
+        <button id="tranca-modal-close" aria-label="Fechar" class="tranca-modal-close-btn"><i class="fas fa-times"></i></button>
+        <div class="tranca-modal-main-img-wrap">
+            <img id="tranca-modal-main-img" src="" alt="" />
+        </div>
+        <h3 id="tranca-modal-title"></h3>
+        <div id="tranca-modal-info"></div>
+        <div id="tranca-modal-galeria" class="tranca-modal-galeria"></div>
+    </div>
+</div>
+
+        <!-- ====== FORMULÁRIO DE AGENDAMENTO ====== -->
+         <h2 id="appointment-heading"><i class="fas fa-calendar-check icon-form"></i> Agende seu Horário</h2>
+        <section id="appointment-section" class="content-section appointment-form fade-in-up" aria-labelledby="appointment-heading" tabindex="-1" style="display:none;">
+            <p id="appointment-desc" class="sr-only">Preencha o formulário para agendar seu horário. Todos os campos são obrigatórios.</p>
+           <div class="form-group">
+    <label for="service"><i class="fas fa-cut icon-form"></i> Serviço Desejado:</label>
+    <select id="service" name="service" required>
+        <option value="">Selecione um serviço</option>
+        <option value="corte-feminino" data-icon="fa-scissors">Corte Feminino</option>
+        <option value="corte-masculino" data-icon="fa-user">Corte Masculino</option>
+        <option value="coloracao" data-icon="fa-braille">Tranças Básicas</option>
+        <option value="tratamento-capilar" data-icon="fa-star">Tranças Decoradas</option>
+        <option value="manicure-pedicure" data-icon="fa-hand-sparkles">Tranças com Freestyle</option>
+        <option value="depilacao" data-icon="fa-magic">Maquiagem Simples</option>
+        <option value="maquiagem" data-icon="fa-paint-brush">Maquiagem Profissional</option>
+        <option value="penteado" data-icon="fa-crown">Penteado</option>
+    </select>
+    <div id="custom-service-select" class="custom-select"></div>
+</div>
+            <div class="form-group">
+                <label for="date"><i class="far fa-calendar-alt icon-form"></i> Data do Agendamento:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time"><i class="far fa-clock icon-form"></i> Horário Preferido:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user icon-form"></i> Seu Nome Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Ex: Ana Paula Ribeiro" autocomplete="name">
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope icon-form"></i> Seu E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Ex: seuemail@dominio.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label for="phone"><i class="fab fa-whatsapp icon-form"></i> Seu Telefone (WhatsApp):</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Ex: (31) 91234-5678" maxlength="15" autocomplete="tel" inputmode="numeric" pattern="\d*">
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary ripple"><i class="fas fa-paper-plane"></i> Confirmar Agendamento</button>
+            </div>
+            <div id="appointment-message" class="message" role="alert" aria-live="polite"></div>
+        </form>
+        <div id="agendamentos-list" class="agendamentos-list" aria-live="polite"></div>
+    </section>
+    <!-- ====== SEÇÕES PRINCIPAIS ====== -->
+    <main class="main-content container" id="main-content">
+        <!-- ====== NOSSOS TRABALHOS ====== -->
+        <section id="works-section" class="content-section works-section fade-in-up" aria-labelledby="works-heading" tabindex="-1">
+    <h2 id="works-heading"><i class="fas fa-images icon-form"></i> Nossos Trabalhos</h2>
+    <div class="works-carousel-container">
+        <button class="works-carousel-btn left" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <div class="works-carousel-slide">
+            <!-- Slides serão preenchidos pelo JS -->
+        </div>
+        <button class="works-carousel-btn right" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
+        <!-- ====== ANTES E DEPOIS ====== -->
+        <section id="beforeafter-section" class="content-section beforeafter-section fade-in-up" aria-labelledby="beforeafter-heading" tabindex="-1">
+            <h2 id="beforeafter-heading"><i class="fas fa-exchange-alt icon-form"></i> Antes & Depois</h2>
+            <form id="beforeafter-upload" class="beforeafter-upload" autocomplete="off">
+                <label for="beforeafter-file" class="btn btn-primary ripple" tabindex="0"><i class="fas fa-upload"></i> Envie sua transformação</label>
+                <input type="file" id="beforeafter-file" name="beforeafter-file" accept="image/*" style="display:none">
+            </form>
+            <div class="beforeafter-gallery" id="beforeafter-gallery">
+                <div class="beforeafter-card">
+                    <div class="beforeafter-imgs">
+                        <img src="antes1.jpg" alt="Antes - Cliente 1" loading="lazy">
+                        <span class="beforeafter-label">Antes</span>
+                        <img src="depois1.jpg" alt="Depois - Cliente 1" loading="lazy">
+                        <span class="beforeafter-label">Depois</span>
+                    </div>
+                    <div class="beforeafter-caption">Transformação de tranças decoradas</div>
+                </div>
+                <div class="beforeafter-card">
+                    <div class="beforeafter-imgs">
+                        <img src="antes2.jpg" alt="Antes - Cliente 2" loading="lazy">
+                        <span class="beforeafter-label">Antes</span>
+                        <img src="depois2.jpg" alt="Depois - Cliente 2" loading="lazy">
+                        <span class="beforeafter-label">Depois</span>
+                    </div>
+                    <div class="beforeafter-caption">Maquiagem profissional para eventos</div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== DEPOIMENTOS ====== -->
+        <section id="testimonials-section" class="content-section testimonials-section fade-in-up" aria-labelledby="testimonials-heading" tabindex="-1">
+            <h2 id="testimonials-heading"><i class="fas fa-comment-dots icon-form"></i> Depoimentos de Clientes</h2>
+            <div class="testimonial-carousel" aria-live="polite">
+                <button class="carousel-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <img src="cliente1.jpg" alt="Foto de Ana Souza" class="testimonial-photo" loading="lazy">
+                        <blockquote>
+                            <p>"Simplesmente amei o atendimento! As tranças ficaram perfeitas e a equipe é muito atenciosa."</p>
+                            <footer>— Ana Souza</footer>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="cliente2.jpg" alt="Foto de Carla Lima" class="testimonial-photo" loading="lazy">
+                        <blockquote>
+                            <p>"O Studio Fortune me surpreendeu! Ambiente acolhedor e profissionais incríveis."</p>
+                            <footer>— Carla Lima</footer>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="cliente3.jpg" alt="Foto de Juliana Alves" class="testimonial-photo" loading="lazy">
+                        <blockquote>
+                            <p>"Minha maquiagem ficou maravilhosa e durou a festa toda. Recomendo demais!"</p>
+                            <footer>— Juliana Alves</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <!-- ====== EQUIPE ====== -->
+        <section id="team-section" class="content-section team-section fade-in-up" aria-labelledby="team-heading" tabindex="-1">
+            <h2 id="team-heading"><i class="fas fa-users icon-form"></i> Nossa Equipe</h2>
+            <div class="team-gallery">
+                <div class="team-card">
+                    <img src="profissional1.jpg" alt="Foto de Bianca Silva" loading="lazy">
+                    <div class="team-info">
+                        <h3>Bianca Silva</h3>
+                        <p>Especialista em Tranças e Penteados</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="Instagram de Bianca"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="profissional2.jpg" alt="Foto de Camila Rocha" loading="lazy">
+                    <div class="team-info">
+                        <h3>Camila Rocha</h3>
+                        <p>Maquiadora Profissional</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="Instagram de Camila"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="profissional3.jpg" alt="Foto de Larissa Gomes" loading="lazy">
+                    <div class="team-info">
+                        <h3>Larissa Gomes</h3>
+                        <p>Manicure & Nail Designer</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="Instagram de Larissa"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== FAQ ====== -->
+        <section id="faq-section" class="content-section faq-section fade-in-up" aria-labelledby="faq-heading" tabindex="-1">
+            <h2 id="faq-heading"><i class="fas fa-question-circle icon-form"></i> Perguntas Frequentes</h2>
+            <div class="faq-list" role="list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq1">Como faço para agendar um horário?</button>
+                    <div class="faq-answer" id="faq1" hidden>
+                        Basta preencher o formulário de agendamento no início da página e clicar em "Confirmar Agendamento". Você receberá a confirmação por e-mail.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq2">Quais formas de pagamento são aceitas?</button>
+                    <div class="faq-answer" id="faq2" hidden>
+                        Aceitamos dinheiro, cartões de crédito/débito e Pix.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq3">Posso remarcar ou cancelar meu agendamento?</button>
+                    <div class="faq-answer" id="faq3" hidden>
+                        Sim! Entre em contato pelo WhatsApp ou telefone para remarcar ou cancelar.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq4">O salão atende crianças?</button>
+                    <div class="faq-answer" id="faq4" hidden>
+                        Sim, atendemos todas as idades com carinho e segurança.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== BLOG ====== -->
+        <section id="blog-section" class="content-section blog-section fade-in-up" aria-labelledby="blog-heading" tabindex="-1">
+            <h2 id="blog-heading"><i class="fas fa-blog icon-form"></i> Blog & Dicas de Beleza</h2>
+            <div class="blog-list">
+                <article class="blog-post">
+                    <h3>Como manter suas tranças lindas por mais tempo</h3>
+                    <p>Dicas essenciais para cuidar das tranças e garantir durabilidade e brilho. <a href="#">Leia mais</a></p>
+                </article>
+                <article class="blog-post">
+                    <h3>Maquiagem para festas: tendências 2025</h3>
+                    <p>Veja as cores e estilos que estão em alta para arrasar em qualquer evento. <a href="#">Leia mais</a></p>
+                </article>
+                <article class="blog-post">
+                    <h3>Unhas decoradas: inspirações para o inverno</h3>
+                    <p>Confira ideias criativas e modernas para suas unhas. <a href="#">Leia mais</a></p>
+                </article>
+            </div>
+        </section>
+        <!-- ====== SOBRE NÓS ====== -->
+        <section id="about-us-section" class="content-section about-us fade-in-up" aria-labelledby="about-us-heading" tabindex="-1">
+            <h2 id="about-us-heading"><i class="fas fa-info-circle icon-form"></i> Sobre Nós</h2>
+            <p>Bem-vindo(a) ao <strong>Studio Fortune</strong>! Desde 2015, no Rio de Janeiro, nos dedicamos a transformar e realçar a sua beleza natural. Nossas portas estão abertas de 8h às 20h, de segunda a sábado.</p>
+            <p>Nossa equipe é composta por profissionais altamente qualificados e apaixonados, sempre atualizados com as últimas tendências e técnicas do mercado de beleza. Utilizamos apenas produtos de alta qualidade e tecnologia avançada para garantir resultados impecáveis e a saúde dos seus cabelos, unhas e pele.</p>
+            <p>No <strong>Studio Fortune</strong>, você encontrará um ambiente acolhedor, moderno e relaxante, pensado para que cada visita seja um momento de cuidado, bem-estar e renovação. Venha nos visitar e descubra o poder de se sentir ainda mais linda(o)! Sua satisfação é nossa prioridade.</p>
+            <h3>Siga-nos e Conecte-se:</h3>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/elegancebh" target="_blank" rel="noopener noreferrer" aria-label="Visite nossa página no Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/_studiofortune" target="_blank" rel="noopener noreferrer" aria-label="Siga-nos no Instagram"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://wa.me/5521974860431" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco via WhatsApp"><i class="fab fa-whatsapp-square"></i></a></li>
+            </ul>
+            <div class="map-container" aria-label="Mapa do Studio Fortune">
+                <iframe src="https://www.google.com/maps?q=Estrada%20da%20Cachamorra%20133%20Rio%20de%20Janeiro&output=embed" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Studio Fortune"></iframe>
+            </div>
+        </section>
+        <!-- ====== MINHA CONTA ====== -->
+        <section id="account-section" class="content-section account-section fade-in-up" aria-labelledby="account-heading" tabindex="-1">
+            <h2 id="account-heading"><i class="fas fa-user-circle icon-form"></i> Minha Conta</h2>
+            <p>Acesse sua conta para ver seus agendamentos, histórico e informações salvas.</p>
+            <div id="login-form-container" class="auth-form-container">
+                <h3>Login</h3>
+                <form id="loginForm" autocomplete="off">
+                    <div class="form-group">
+                        <label for="login-email"><i class="fas fa-envelope icon-form"></i> E-mail:</label>
+                        <input type="email" id="login-email" name="login-email" required placeholder="seuemail@dominio.com" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password"><i class="fas fa-lock icon-form"></i> Senha:</label>
+                        <input type="password" id="login-password" name="login-password" required placeholder="••••••••" autocomplete="current-password">
+                    </div>
+                    <button type="submit" class="btn btn-primary ripple"><i class="fas fa-sign-in-alt"></i> Entrar</button>
+                    <a href="#" class="toggle-link" data-form="register">Ainda não tem conta? Cadastre-se aqui.</a>
+                </form>
+                <div id="login-message" class="message" role="alert" aria-live="polite"></div>
+            </div>
+            <div id="register-form-container" class="auth-form-container" style="display: none;">
+                <h3>Cadastro</h3>
+                <form id="registerForm" autocomplete="off">
+                    <div class="form-group">
+                        <label for="register-name"><i class="fas fa-user icon-form"></i> Nome Completo:</label>
+                        <input type="text" id="register-name" name="register-name" required placeholder="Seu Nome Completo" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email"><i class="fas fa-envelope icon-form"></i> E-mail:</label>
+                        <input type="email" id="register-email" name="register-email" required placeholder="seuemail@dominio.com" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-phone"><i class="fas fa-phone icon-form"></i> Telefone (WhatsApp):</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Ex: (31) 91234-5678" maxlength="15" autocomplete="tel" inputmode="numeric" pattern="\d*">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password"><i class="fas fa-lock icon-form"></i> Criar Senha:</label>
+                        <input type="password" id="register-password" name="register-password" required placeholder="••••••••" autocomplete="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password"><i class="fas fa-lock icon-form"></i> Confirmar Senha:</label>
+                        <input type="password" id="register-confirm-password" name="register-confirm-password" required placeholder="••••••••" autocomplete="new-password">
+                    </div>
+                    <button type="submit" class="btn btn-primary ripple"><i class="fas fa-user-plus"></i> Cadastrar</button>
+                    <a href="#" class="toggle-link" data-form="login">Já tem conta? Faça login aqui.</a>
+                </form>
+                <div id="register-message" class="message" role="alert" aria-live="polite"></div>
+            </div>
+            <div class="profile-section" id="profile-section" style="display:none;">
+                <h3>Meu Perfil</h3>
+                <div class="profile-photo-upload">
+                    <img id="profile-photo" src="profile-default.png" alt="Foto de perfil" loading="lazy">
+                    <input type="file" id="profile-photo-input" accept="image/*" style="display:none">
+                    <button class="btn btn-primary ripple" id="profile-photo-btn"><i class="fas fa-camera"></i> Alterar Foto</button>
+                </div>
+                <div class="profile-info">
+                    <p><strong>Nome:</strong> <span id="profile-nome"></span></p>
+                    <p><strong>E-mail:</strong> <span id="profile-email"></span></p>
+                    <p><strong>Telefone:</strong> <span id="profile-tel"></span></p>
+                </div>
+                <div class="profile-agendamentos">
+                    <h4>Meus Agendamentos</h4>
+                    <ul id="profile-agendamentos-list"></ul>
+                </div>
+                <button class="btn btn-primary ripple" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Sair</button>
+            </div>
+        </section>
+        <!-- ====== MODAL DE AVALIAÇÃO ====== -->
+        <div id="avaliacao-modal" class="avaliacao-modal" aria-modal="true" role="dialog" style="display:none;">
+            <div class="avaliacao-content">
+                <h3>Avalie seu atendimento</h3>
+                <div class="avaliacao-stars" id="avaliacao-stars">
+                    <i class="fas fa-star" data-star="1"></i>
+                    <i class="fas fa-star" data-star="2"></i>
+                    <i class="fas fa-star" data-star="3"></i>
+                    <i class="fas fa-star" data-star="4"></i>
+                    <i class="fas fa-star" data-star="5"></i>
+                </div>
+                <textarea id="avaliacao-text" placeholder="Deixe seu comentário"></textarea>
+                <button class="btn btn-primary ripple" id="avaliacao-enviar"><i class="fas fa-paper-plane"></i> Enviar Avaliação</button>
+                <button class="btn" id="avaliacao-fechar">Fechar</button>
+                <div id="avaliacao-msg" class="message" role="alert"></div>
+            </div>
+        </div>
+        <!-- ====== PAINEL ADMINISTRATIVO (VISUAL) ====== -->
+        <section id="admin-section" class="content-section admin-section fade-in-up" aria-labelledby="admin-heading" tabindex="-1" style="display:none;">
+            <h2 id="admin-heading"><i class="fas fa-tools icon-form"></i> Painel Administrativo</h2>
+            <p>Gerencie agendamentos, avaliações e clientes. (Simulação visual)</p>
+            <div class="admin-panel">
+                <div>
+                    <h4>Agendamentos Recentes</h4>
+                    <ul id="admin-agendamentos"></ul>
+                </div>
+                <div>
+                    <h4>Avaliações Recentes</h4>
+                    <ul id="admin-avaliacoes"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ====== FOOTER ====== -->
+    <footer class="main-footer fade-in" role="contentinfo">
+        <p>&copy; 2025 Studio Fortune. Todos os direitos reservados. | <a href="privacidade.html" target="_blank">Política de Privacidade</a> | <a href="termos.html" target="_blank">Termos de Uso</a></p>
+        <address>
+            Estrada da Cachamorra, 133, Rio de Janeiro, RJ <br>
+            Contato: <a href="tel:+5521974860341">(21) 97486-0431</a> | E-mail: <a href="mailto:contato@elegancebh.com">contato@elegancebh.com</a>
+        </address>
+    </footer>
+    <!-- ====== BOTÕES FLUTUANTES ====== -->
+    <button id="scrollTopBtn" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+    <a href="https://wa.me/5521974860431" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <!-- ====== SCRIPTS ====== -->
+     <!-- ...existing code... -->
+
+<!-- ...existing code... -->
+    <script src="script.js"></script>
+    <script>
+    // ===== MENU LATERAL RESPONSIVO =====
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebarNav = document.getElementById('sidebar-nav');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+    const sidebarClose = document.getElementById('sidebar-close');
+    function openSidebar() {
+        sidebarNav.classList.add('open');
+        sidebarOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        const firstNav = sidebarNav.querySelector('.nav-link');
+        if (firstNav) firstNav.focus();
+    }
+    function closeSidebar() {
+        sidebarNav.classList.remove('open');
+        sidebarOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    if (menuToggle) menuToggle.onclick = openSidebar;
+    if (sidebarClose) sidebarClose.onclick = closeSidebar;
+    if (sidebarOverlay) sidebarOverlay.onclick = closeSidebar;
+    // Removido: fechamento duplicado ao clicar em links
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && sidebarNav.classList.contains('open')) {
+            closeSidebar();
+        }
+    });
+</script>
+</body>
+</html>
